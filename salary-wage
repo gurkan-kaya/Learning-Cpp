@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+float hafta,yil; //değişkenler
+cout<<"Yillik gelirin nedir?"; //kullanıcıya mesaj
+cin>>yil;
+hafta=yil/52;
+cout<<" Haftalik geliriniz"<<hafta<<"TL'dir";
+}

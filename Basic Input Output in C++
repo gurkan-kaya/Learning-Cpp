@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ int a;
+cout<<"Lutfen bir sayi giriniz:"<< endl;
+ cin>>a; //klavyeden girilecek değer
+cout<<"klavyeden" <<a<< "degerini girdiniz."<< endl;
+cout<<"klavyeden girilen degerin 10 fazlasi" <<a+10<< endl;
+cout<<"klavyeden girilen degerin yarisi" <<a/2<< endl; 
+}

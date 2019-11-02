@@ -1,4 +1,4 @@
-﻿#include <iostream> 
+#include <iostream> 
 #include <cstdlib>
 #include <locale.h>
 using namespace std;

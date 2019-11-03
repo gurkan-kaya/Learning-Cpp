@@ -1,0 +1,36 @@
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	int ay;
+	cout << "Kacinci ay?";
+	cin >> ay;
+	switch (ay)
+	{
+	case 3:
+	case 4:
+	case 5:
+		cout << "Ilkbahar Mevsimi";
+		break;
+	case 6:
+	case 7:
+	case 8:
+		cout << "Yaz Mevsimi";
+		break;
+	case 9:
+	case 10:
+	case 11:
+		cout << "Sonbahar Mevsimi";
+		break;
+	case 12:
+	case 1:
+	case 2:
+		cout << "Kis Mevsimi";
+		break;
+    default:
+		cout << "1'den 12'ye bir deger giriniz.";
+	}
+	
+}

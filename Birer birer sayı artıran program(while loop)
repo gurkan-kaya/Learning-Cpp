@@ -1,0 +1,15 @@
+//sayaç örneği
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Kaca kadar sayilsin? :";
+	int sayac = 1, a;
+	cin >> a;
+	while (sayac <=a)
+{
+		cout << sayac << endl;
+		sayac++;
+
+	}
+}

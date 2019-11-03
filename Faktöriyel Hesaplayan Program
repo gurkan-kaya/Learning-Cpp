@@ -1,0 +1,16 @@
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+	int sayi;
+	int fakt = 1;
+	cout << "Sayiyi giriniz" <<endl;
+    cin >> sayi;
+	
+	for (int j = sayi; j > 0; j--) 
+		
+		fakt *= j; //sayi*sayi-1-sayi-2...*2*1
+		cout << "Faktoriyel \t" << fakt << "'dir \n";
+}

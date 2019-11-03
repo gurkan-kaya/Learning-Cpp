@@ -1,0 +1,21 @@
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+	long sayi;
+	char ch;
+	do
+	{
+		cout <<" \n Bolunen sayi:" ; cin >> sayi;
+		cout << "Bolum:" << sayi / 2 <<endl;
+		cout << "Kalan:" << sayi % 2<<endl;
+		cout << "\n Başka islem? (e/h):"; cin >> ch;
+	} 
+	while (ch != 'h');
+	return 0;
+	
+		
+	
+}

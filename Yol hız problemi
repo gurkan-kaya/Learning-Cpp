@@ -1,0 +1,14 @@
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	int yol,hiz;
+	cout << "Mesafeyi giriniz(m):";
+	cin >> yol;
+	cout << "Hizi giriniz(s):";
+	cin >> hiz;
+	cout << "Zaman \t" << yol / hiz << "\t m/s'dir.";
+	
+}

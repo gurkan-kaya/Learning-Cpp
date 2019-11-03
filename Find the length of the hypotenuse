@@ -1,0 +1,14 @@
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	cout << "Enter the value of a leg:" <<endl;
+	cin >> a;
+	cout << "Enter the value of b leg:" <<endl;
+	cin >> b;
+	c = sqrt(a * a + b * b); 
+	cout << "Hypotenuse is \t" << c << endl;
+}

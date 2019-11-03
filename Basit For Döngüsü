@@ -1,0 +1,12 @@
+//6 sayısının katları (a<15 koşulu ile)
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	for (a = 0; a < 15; a++) /*3 parametre vardır ve aynı parantezde noktalı virgüllerle ayrılarak yazılır. 1. parametre: Başlangıç değeri
+																									                                                        2. parametre:Koşul
+																									                                                        3. parametre:iteration(ardışık tekrar)*/
+		cout << 6 * a <<" ";
+	
+}

@@ -1,0 +1,17 @@
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	cout << "Bir sayi giriniz\n";
+	int a ;
+	a = 1;
+	cout << "Hesaplamayi sonlandirmak icin 0'a basiniz. \n";
+	while (a!=0) 
+{
+		cin >> a;
+		cout  << a << " sayisinin karesi " << a*a<< "'dir" <<endl;
+
+	}
+}

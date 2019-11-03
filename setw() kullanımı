@@ -1,0 +1,15 @@
+//1'den 10'a kadar olan sayıların karelerinin hesaplanması
+#include <iostream>
+#include <iomanip> //setw manipülatörü için
+using namespace std;
+int main()
+{
+	int a;
+	for (a = 1; a < 11; a++) {
+		cout <<setw(4) << a  ;
+		cout <<setw(6) <<  a * a  << endl;
+
+	}
+		
+	
+}

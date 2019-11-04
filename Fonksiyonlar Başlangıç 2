@@ -1,0 +1,37 @@
+
+#include <iostream>
+
+using namespace std;
+void selamla() { //Selamla adında bir fonksiyon tanımladık.
+	cout << "Naber?" << endl;
+	cout << "Nasilsin?" << endl;
+	//Bu fonksiyonun her çağrıldığında Naber? Nasılsın? yazması gerektiğini girdik.
+	}
+int main() {
+	selamla();
+	selamla();
+	//Main fonksiyonumuzda selamla() fonksiyonumuzu 2 kere çağırmış olmamız demek, 2 kere Naber? Nasılsın yazılacağı anlamına gelir.
+}
+
+
+/* NEDEN MAIN FONKSİYONU ALTTA?
+Hata verirdi. Çünkü derleyici,derlemebaşladığında tanımlanmamış, selamla() adında bir fonksiyon görürdü 
+ve tanımlanmadığu için hata verirdi. Ancak aşağıdaki şekilde yazarak bu problemi çözebilirdik.
+	
+
+void selamla();
+int main() {
+
+	selamla();
+	selamla();
+}
+
+
+
+void selamla()
+{
+	cout << "Naber?" << endl;
+	cout << "Nasilsin?" << endl;
+
+}
+*/

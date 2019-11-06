@@ -4,7 +4,7 @@
 	int main()
 	{
 	
-		cout << "Boyutu giriniz";
+		cout << "Sayi giriniz";
 			int n;
 		cin >> n;
 		int a = 1;

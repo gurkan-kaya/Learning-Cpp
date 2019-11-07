@@ -1,0 +1,39 @@
+/* We want to print a letter pyramid like that:
+A
+ABA
+ABCBA
+ABCDCBA
+ABCDEDCBA
+.
+.
+.
+*/
+//The pyramid have to start from the letter that the user wants.
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	char a;
+		cout << "Enter the letter you want to start from(Upper case)";
+	cin >> a;
+	for (int i = a; i <= 90; i++) {
+
+	
+		for (int j = a; j <= i; j++) {
+        
+			cout << (char)j;
+	   }
+		for (int k = i-1; k >= a; k--) {
+
+			cout << (char)k;
+		}
+		
+	cout << endl;
+	}
+		
+}
+
+
+

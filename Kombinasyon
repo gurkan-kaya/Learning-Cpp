@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int faktoriyel(int x)
+{
+    int carpim=1;
+   
+ for(int i=1;i<=x;i++)
+        
+        carpim=carpim*i;
+        return carpim;
+}
+
+
+
+
+int main()
+{
+   
+    int a,b; 
+    cin>>a;
+    cin>>b;
+    cout<<faktoriyel(a)/(faktoriyel(b)*faktoriyel(a-b));
+    
+}

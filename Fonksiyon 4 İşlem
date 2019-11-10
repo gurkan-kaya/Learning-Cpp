@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int topla(int a, int b)
+{
+	int toplam;
+	toplam = a + b;
+	return toplam;
+	}
+int cıkar(int c, int d) {
+	int cıkarma;
+	cıkarma = c-d;
+	return cıkarma;
+}
+int carp(int e, int f) {
+	int carpma;
+	carpma = e*f;
+	return carpma;
+}
+double bol(double g, double h) {
+	double bolme;
+	bolme = g/h;
+	return bolme;
+}
+
+int main()
+{
+	int x, y;
+	cin >> x;
+	cin >> y;
+	cout << topla(x, y) << endl; 
+	cout<<cıkar(x,y) << endl; 
+	cout<<carp(x,y) << endl; 
+	cout<<bol(x,y)<<endl;
+}
+

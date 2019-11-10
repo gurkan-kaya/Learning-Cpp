@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+struct Address {
+	string cityName;
+	int No;
+};
+
+
+
+struct Employee
+{
+	int id;
+	string isim;
+	string departman;
+	Address adres;
+};
+
+
+
+
+int main()
+{
+	
+	Employee employee1{ 15,"Gurkan","Information Technology",{"Ankara",10}};
+
+	cout << employee1.id << endl;
+	cout << employee1.isim << endl;
+	cout << employee1.departman << endl;
+	cout << employee1.adres.cityName << endl;
+	cout << employee1.adres.No << endl;
+
+	return 0;
+
+
+}
+

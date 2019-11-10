@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+struct Employee
+{
+	int id;
+	string name;
+	string department;
+};
+
+
+int main()
+{
+	
+	Employee employee1 = { 15,"Gurkan","Information Technology" };
+
+	cout << employee1.name << endl;
+	cout << employee1.department << endl;
+	
+	return 0;
+
+
+}
+
+/*
+Employee employee1 = { 15,"Gurkan","Information Technology" }; ->Bunu şu şekilde de yapabilirdik:
+
+Employee employee1;
+     employee1.id=15;
+	 employee1.name="Gurkan";
+	 employee1.department="Information Technology";
+
+*/

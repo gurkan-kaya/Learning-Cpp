@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+struct Employee
+{
+	int id;
+	string name;
+	string department;
+};
+
+void showEmployee(Employee employee)
+{
+	cout << "ID:" << employee.id << endl;
+	cout << "ISIM:" << employee.name << endl;
+	cout << "DEPARTMAN:" << employee.department << endl;
+}
+
+
+
+
+int main()
+{
+	
+	Employee employee1;
+
+ employee1.id=15;
+	 employee1.name="Gurkan";
+	 employee1.department="Information Technology";
+	 showEmployee(employee1);;
+
+	return 0;
+
+
+}
+

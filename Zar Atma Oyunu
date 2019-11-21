@@ -1,0 +1,47 @@
+#include <iostream>
+#include <time.h>
+
+using namespace std;
+		int main()
+	{
+			int n;
+			char d;
+			do{
+			
+			cout << "Kac zar atilacagini giriniz: ";
+			cin >> n;
+			srand(time(NULL));
+			int skor=0;
+			for(int i=0;i<n;i++)
+		{
+			int z1=rand() % 6 + 1;
+			int z2 = rand() % 6 + 1;
+			cout << z1 << " " << z2<<endl;
+			if (z1 > z2) {
+				skor++;
+			}
+			else if (z2 > z1) {
+				skor--;
+			}
+		}
+			if (skor > 0)
+				cout << "1. oyuncu kazandi";
+			else if (skor < 0)
+				cout << "2. oyuncu kazandi";
+			else
+				cout << "Berabere bitti";
+
+			
+			cout << "Devam icin d'ye basiniz ";
+			cin >> d;
+			}while ( d == 'd');
+		
+		
+			
+			
+			
+	}
+	
+	
+
+

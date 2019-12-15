@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+struct Insan
+{
+	char Ad[10];
+	char Soyad[10];
+	int TC;
+	int DogumYili;
+
+};
+	
+Insan VeriGir()
+{
+Insan ogr;
+	cout << "Adi giriniz";
+	cin >> ogr.Ad;
+	cout << "Soyadi giriniz";
+	cin >> ogr.Soyad;
+	cout << "TC'yi giriniz";
+	cin >> ogr.TC;
+	cout << "Dogum yili giriniz";
+	cin >> ogr.DogumYili;
+	return ogr;
+}
+
+void VeriYazdir(Insan a)
+{
+	
+	cout << a.Ad << endl;
+	cout << a.Soyad << endl;
+	cout << a.TC << endl;
+	cout << a.DogumYili << endl;
+}
+int main()
+{
+	Insan ogr1;
+	ogr1=VeriGir();
+	
+	
+	VeriYazdir(ogr1);
+	
+	
+}
+

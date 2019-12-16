@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+
+class Dikdortgen
+{
+public:
+	int yukseklik;
+	int genislik;
+	int Alan;
+
+	void VeriGir()
+	{
+		cout << "Yukseklik? :";
+			cin >> yukseklik;
+		cout << "Genislik? :";
+			cin >> genislik;
+	}
+
+	void AlanBul()
+	{
+		Alan = genislik * yukseklik;
+		cout << "Dikdortgenin alani: " << Alan << endl;
+	}
+
+};
+
+
+
+int main()
+{
+	Dikdortgen d1;
+	d1.VeriGir();
+	d1.AlanBul();
+}
+

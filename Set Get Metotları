@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+
+class Ogrenci
+{
+private:
+	int OgrenciNo;
+public:
+	void setOgrenciNo(int ogrno)
+	{
+		if (ogrno <= 0)
+			cout << "Ogrenci numarasi 0'dan buyuk olmalidir";
+		else
+		OgrenciNo = ogrno;
+	}
+
+	void getOgrenciNo()
+	{
+		cout << "Ogrenci numarasi:" <<OgrenciNo;
+	}
+};
+
+
+int main()
+{
+	Ogrenci ogr1;
+	ogr1.setOgrenciNo(12);
+	ogr1.getOgrenciNo();
+}

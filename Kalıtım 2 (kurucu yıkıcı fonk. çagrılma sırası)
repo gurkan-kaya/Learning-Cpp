@@ -1,0 +1,114 @@
+  #include<iostream>
+using namespace std;
+
+
+class Sekil
+{
+	public :
+	int alan;
+	string birim;
+	string SekilTuru;
+	Sekil()
+	{
+		cout << "Sekil() cagrildi" << endl;
+		birim = "cm2";
+	}
+	~Sekil()
+	{
+		cout << "~Sekil() cagrildi" << endl;
+	}
+	void AlanYazdir()
+	{
+		
+		cout << SekilTuru << " " << alan << " " << birim << " alana sahiptir" << endl;
+	}
+
+};
+ 
+class Ucgen :public Sekil
+{
+public:
+	int yukseklik;
+	int taban;
+	Ucgen()
+	{
+		cout << "Ucgen() cagrildi"<<endl;
+		SekilTuru = "Ucgen";
+	}
+	~Ucgen()
+	{
+		cout << "~Ucgen() cagrildi" << endl;
+	}
+
+};
+class EskenarUcgen:public Ucgen
+{
+public:
+	EskenarUcgen()
+	{
+		cout << "EskenarUcgen() cagrildi" << endl;
+		SekilTuru = "Eskenar Ucgen";
+	}
+	~EskenarUcgen()
+	{
+		cout << "~EskenarUcgen() cagrildi" << endl;
+	}
+};
+
+
+
+
+class Dortgen:public Sekil
+{
+public:
+	int en;
+	int boy;
+	Dortgen()
+	{
+		SekilTuru = "Dikdortgen";
+	}
+};
+
+class Daire : public Sekil
+{
+public:
+	int yaricap;
+	Daire()
+	{
+		SekilTuru = "Daire";
+	}
+};
+
+class Kare : public Sekil
+{
+public:
+	int kenar;
+	Kare()
+	{
+		SekilTuru = "Kare";
+	}
+};
+
+int main()
+{
+	EskenarUcgen e1;
+	cout << "--------------------------"<<endl;
+	
+
+    return 0;
+}
+
+
+/*  
+     Çıktı:
+Sekil() cagrildi
+Ucgen() cagrildi
+EskenarUcgen() cagrildi
+--------------------------
+~EskenarUcgen() cagrildi
+~Ucgen() cagrildi
+~Sekil() cagrildi
+*/
+
+
+

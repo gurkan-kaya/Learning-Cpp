@@ -1,0 +1,69 @@
+#include <iostream>
+
+using namespace std;
+
+class Dikdortgen
+{
+	int kk, uk;
+
+		public:
+			Dikdortgen(int x, int y);
+
+			int alan()
+			{
+				return kk * uk;
+			}
+
+
+};
+
+Dikdortgen::Dikdortgen(int x, int y)
+{
+		kk = x;
+		uk = y;
+
+
+}
+
+
+int main()
+{
+	Dikdortgen d1(5, 6);
+	cout << d1.alan();
+}
+
+
+
+
+
+/* Yukarıdakinden farklı olarak constructor aşağıdaki gibi, sınıfın içinde de yazılabilir.
+
+#include <iostream>
+
+using namespace std;
+
+class Dikdortgen
+{
+	int kk, uk;
+
+		public:
+			Dikdortgen(int x, int y)
+			{
+				kk = x;
+				uk = y;
+			}
+
+			int alan()
+			{
+				return kk * uk;
+			}
+
+
+};
+
+
+int main()
+{
+	Dikdortgen d1(5, 6);
+	cout << d1.alan();
+}

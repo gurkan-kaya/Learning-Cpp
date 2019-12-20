@@ -1,0 +1,28 @@
+ #include<iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	ofstream yazmaDosyasi;                                   //ofstream ile dosyaya yazma yapılır
+	yazmaDosyasi.open("dosya1.txt");                         //dosya .open() ile açılır ve tırnak içinde dosya ismi yazılır 
+	yazmaDosyasi << "Merhaba .txt dosyası." << endl;         //Dosyaya yazılacak metin girilir
+	yazmaDosyasi.close();  // .close() ile dosya kapatılır.
+
+	ifstream okumaDosyasi;                                   //ifstream ile dosya okuma yapılır
+	string satir;
+	okumaDosyasi.open("dosya2.txt"); 
+	getline(okumaDosyasi, satir);
+	cout << satir<<endl;                                           //1. satırı yazdırır
+	getline(okumaDosyasi, satir);
+	cout << satir<<endl;                                          //2. satırı yazdırır
+	getline(okumaDosyasi, satir);
+	cout << satir<<endl;          /                               /3. satırı yazdırır
+                                             /*Eğer yukarıdaki 2 satırı tekrar eklersek 4. satırı yazdıracak. Ama metinde
+	                                             3 satır varsa tekrar 3. satırı yazdıracak.*/
+	okumaDosyasi.close();
+
+		return 0;
+}

@@ -1,0 +1,73 @@
+  #include<iostream>
+using namespace std;
+
+
+class Sekil
+{
+	public :
+	int alan;
+	string birim;
+	string SekilTuru;
+	Sekil()
+	{
+		birim = "cm2";
+	}
+	void AlanYazdir()
+	{
+		cout << SekilTuru << " " << alan << " " << birim << " alana sahiptir" << endl;
+	}
+
+};
+ 
+class Ucgen :public Sekil
+{
+public:
+	int yukseklik;
+	int taban;
+	Ucgen()
+	{
+		SekilTuru = "Ucgen";
+	}
+};
+
+class Dortgen:public Sekil
+{
+public:
+	int en;
+	int boy;
+	Dortgen()
+	{
+		SekilTuru = "Dikdortgen";
+	}
+};
+
+class Daire : public Sekil
+{
+public:
+	int yaricap;
+	Daire()
+	{
+		SekilTuru = "Daire";
+	}
+};
+
+class Kare : public Sekil
+{
+public:
+	int kenar;
+	Kare()
+	{
+		SekilTuru = "Kare";
+	}
+};
+
+int main()
+{
+	Kare k1;
+	k1.kenar = 10;
+	k1.alan= k1.kenar*k1.kenar;
+	k1.AlanYazdir();
+
+
+    return 0;
+}

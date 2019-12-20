@@ -71,3 +71,7 @@ int main()
 
     return 0;
 }
+
+// Bilgi: Türetilmiş sınıflar kalıtım aldıkları Temel sınıfların private ürelerine erişemezler.Private sınıf dışındaki herkese kapalıdır
+// Fakat PROTECTED VE PUBLIC üyerlerine erişebilirler. Zaten Public'e sınıf içi ve dışı herkes erişebilir
+// Protected'a ise türetilmiş sınıflar erişebilir.

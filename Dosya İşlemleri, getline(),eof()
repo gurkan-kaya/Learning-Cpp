@@ -1,0 +1,43 @@
+ #include<iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+
+	ifstream okumaDosyasi;     
+	string satir;
+	okumaDosyasi.open("dosya2.txt");
+	
+	while(getline(okumaDosyasi, satir))
+	{
+			cout << satir <<endl;
+	}
+	okumaDosyasi.close();
+	
+				/*	Çıktı:
+					Bu 1. satir
+					Bu 2. satir
+					Bu 3. satir	
+			(	getline sayesinde satır satır yazdırdı.	)	*/
+	
+	
+	ifstream okumaDosyasi2;
+	string kelime;
+	okumaDosyasi2.open("dosya3.txt");
+	while (!okumaDosyasi2.eof())
+	{
+		okumaDosyasi2 >> kelime;
+	cout << kelime << endl;
+	}
+	okumaDosyasi2.close();
+		return 0;
+}
+
+				/*	    Çıktı:
+						hi
+						hello
+						welcome  
+					(	Kelime kelime yazdırdı. eof()'ye yani end of file'a gelince döngüden çıktı.)	*/

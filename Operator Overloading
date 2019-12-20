@@ -1,0 +1,53 @@
+  
+#include<iostream>
+using namespace std;
+
+class Kompleks
+{
+private:
+	int reel;
+	int sanal;
+public:
+    Kompleks(int r = 0, int s = 0)
+    {
+        reel = r;
+        sanal = s;
+    }
+
+	
+	Kompleks operator+(Kompleks obj)
+	{
+		Kompleks toplam;
+		toplam.reel = reel + obj.reel;
+		toplam.sanal = sanal + obj.sanal;
+		return toplam;
+	}
+    
+
+
+    void print()
+    {
+        if(sanal > 0)
+            cout << reel << " + " << sanal << "i" << endl;
+        else if(sanal < 0)
+            cout << reel << " - " << -sanal << "i" << endl;
+        else
+            cout << reel << endl;
+    }
+
+
+};
+
+
+int main()
+{
+	Kompleks k1(2, 3), k2(4,-1);
+	k1.print();
+	k2.print();
+
+	Kompleks k3 = k1 + k2;
+	k3.print();
+
+
+    return 0;
+}

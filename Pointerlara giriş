@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a=5;
+
+int *ptr=&a;
+
+cout<<"Degiskenin adresi:"<<&a<<endl;
+
+cout<<"Degiskenin adresi:"<<ptr<<endl;
+
+cout<<"Degiskenin degeri:"<<*ptr<<endl;
+
+*ptr=6;
+
+cout<<"Degiskenin yeni degeri:"<<a<<endl;
+}
+
+/*çıktı:
+Degiskenin adresi: 0x23fe44
+Degiskenin adresi: 0x23fe44
+Degiskenin degeri: 5
+Degiskenin yeni degeri: 6  */

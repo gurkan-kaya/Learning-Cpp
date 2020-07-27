@@ -1,0 +1,29 @@
+/* #ifndef , #define , #endif neden kullanılır ?
+Kendi header dosyalarımızı yazarken bu ifadeleri kullanmamız gerekir. ifndef ->  if not defined demektir. define->tanımla demektir. Yani bu henüz tanımlanmadıysa tanımla
+anlamına gelir. Bunu yapamamızın amacı eğer bir header dosyası tanımladıysak bunu tekrar tanımlamayı(redifening) engellemektir. Bu sayede 2. kez bu dosyaya gelindiğinde, doğrudan
+endif'e gider. Örnek bir hpp dosyası:
+*/
+
+/*
+#ifndef OGRENCI_HPP
+#define OGRENCI_HPP
+
+class Ogrenci
+{
+private:
+	int yas;
+	double boy;
+
+public:
+	Ogrenci();
+	Ogrenci(int,double);
+	void YasIlerle(int);
+	void BoyUza(double);
+	int getYas();
+	double getBoy();
+	~Ogrenci();
+
+};
+
+#endif
+*/
